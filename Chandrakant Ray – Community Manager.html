@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chandrakant Ray – Community Manager | Gaming & Esports</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#e3ecf0;--card:#edf4f7;--ink:#1b2340;--muted:#55607e;
+  --coral:#ff8a6b;--teal:#5ed6c1;--violet:#a094ff;--sun:#ffd36b;
+  --hi:rgba(255,255,255,.9);--lo:rgba(70,100,130,.3);--in-lo:rgba(60,90,120,.16);--in-hi:rgba(255,255,255,.75);
+  --track:rgba(60,90,120,.13);
+  --f-head:'Bricolage Grotesque','Trebuchet MS',sans-serif;--f-body:'DM Sans',system-ui,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#141830;--card:#1e2442;--ink:#f1f3ff;--muted:#a9b0d6;
+  --coral:#f0775a;--teal:#43bfa9;--violet:#8777f0;--sun:#e8b94a;
+  --hi:rgba(255,255,255,.07);--lo:rgba(0,0,0,.55);--in-lo:rgba(0,0,0,.4);--in-hi:rgba(255,255,255,.1);--track:rgba(0,0,0,.35);}}
+:root[data-theme="dark"]{
+  --bg:#141830;--card:#1e2442;--ink:#f1f3ff;--muted:#a9b0d6;
+  --coral:#f0775a;--teal:#43bfa9;--violet:#8777f0;--sun:#e8b94a;
+  --hi:rgba(255,255,255,.07);--lo:rgba(0,0,0,.55);--in-lo:rgba(0,0,0,.4);--in-hi:rgba(255,255,255,.1);--track:rgba(0,0,0,.35);}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.6 var(--f-body);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--f-head);margin:0;line-height:1.1;letter-spacing:-.02em}
+h1{font-size:clamp(2.5rem,8.5vw,4.4rem);font-weight:800}
+h2{font-size:1.5rem;font-weight:700;margin-bottom:.8rem}
+h3{font-size:1.15rem;font-weight:700}
+p{margin:0;max-width:60ch}
+:focus-visible{outline:3px solid var(--violet);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.25rem}
+
+.clay{background:var(--card);border-radius:30px;
+  box-shadow:14px 14px 30px var(--lo),-10px -10px 26px var(--hi),inset -6px -6px 14px var(--in-lo),inset 6px 6px 14px var(--in-hi)}
+.c-coral{background:var(--coral)}.c-teal{background:var(--teal)}.c-violet{background:var(--violet)}.c-sun{background:var(--sun)}
+.c-coral,.c-teal,.c-violet,.c-sun{color:#1b2340}
+.dent{box-shadow:inset 5px 5px 11px var(--in-lo),inset -5px -5px 11px var(--in-hi)}
+
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;padding:.8rem 0}
+.bar{display:flex;align-items:center;justify-content:space-between;padding:.5rem .6rem .5rem 1.3rem;border-radius:999px}
+.bar b{font:800 1.1rem var(--f-head)}
+.bar ul{display:flex;gap:.2rem;list-style:none;margin:0;padding:0}
+.bar a{display:block;padding:.45rem .85rem;border-radius:999px;text-decoration:none;font-weight:700;font-size:.92rem;color:var(--muted)}
+.bar a:hover{color:var(--ink)}
+@media(max-width:640px){.bar li:nth-child(-n+2){display:none}}
+
+.btn{display:inline-block;border:0;cursor:pointer;font:700 1rem var(--f-body);color:#1b2340;text-decoration:none;padding:.9rem 1.6rem;border-radius:999px;
+  box-shadow:8px 8px 16px var(--lo),-6px -6px 14px var(--hi),inset -4px -4px 8px var(--in-lo),inset 4px 4px 8px var(--in-hi);transition:transform .15s,box-shadow .15s}
+.btn:active{transform:scale(.96);box-shadow:3px 3px 7px var(--lo),inset 5px 5px 10px var(--in-lo)}
+.btn.soft{background:var(--card);color:var(--ink)}
+
+.hero{display:grid;gap:2.5rem;align-items:center;padding:2rem 0 2.5rem}
+@media(min-width:860px){.hero{grid-template-columns:1.2fr 1fr}}
+.hero p{color:var(--muted);font-size:1.15rem;margin:1.2rem 0 1.8rem}
+.hero h1 span{display:block;color:var(--muted);font-weight:700;font-size:.45em;margin-bottom:.6rem;letter-spacing:0}
+.row{display:flex;flex-wrap:wrap;gap:1rem}
+
+/* player card */
+.player{padding:1.6rem;max-width:420px;width:100%;margin:0 auto}
+.who{display:flex;align-items:center;gap:1rem}
+.avatar{width:84px;height:84px;border-radius:50%;display:grid;place-items:center;font:800 2rem var(--f-head);color:#1b2340;flex:none;
+  box-shadow:7px 7px 14px var(--lo),-5px -5px 12px var(--hi),inset -5px -5px 10px rgba(0,0,0,.14),inset 5px 5px 10px rgba(255,255,255,.45)}
+.who h3{font-size:1.3rem}
+.who small{color:var(--muted);font-size:.9rem;display:block}
+.status{display:flex;align-items:center;gap:.6rem;margin:1.2rem 0;padding:.65rem 1rem;border-radius:999px;font-weight:700;font-size:.92rem}
+.dot{width:12px;height:12px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 4px rgba(94,214,193,.3)}
+.bars{display:grid;gap:1rem}
+.bar-row{display:grid;gap:.4rem}
+.bar-row div:first-child{display:flex;justify-content:space-between;font-weight:700;font-size:.95rem}
+.track{height:16px;border-radius:99px;background:var(--track);box-shadow:inset 3px 3px 6px var(--in-lo),inset -2px -2px 5px var(--in-hi);overflow:hidden}
+.fill{height:100%;width:0;border-radius:99px;box-shadow:inset -2px -3px 5px rgba(0,0,0,.15),inset 2px 2px 5px rgba(255,255,255,.5);animation:grow 1.4s cubic-bezier(.2,.8,.2,1) .3s forwards}
+@keyframes grow{to{width:var(--w)}}
+@media(prefers-reduced-motion:reduce){.fill{animation:none;width:var(--w)}html{scroll-behavior:auto}}
+
+/* bento */
+.bento{display:grid;gap:1.6rem;grid-template-columns:repeat(12,1fr);padding-bottom:2rem}
+.bento>*{grid-column:span 12;padding:1.7rem}
+@media(min-width:860px){.s7{grid-column:span 7!important}.s5{grid-column:span 5!important}.s6{grid-column:span 6!important}.s4{grid-column:span 4!important}}
+.bento p{color:var(--muted)}
+.pills{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:.9rem}
+.pill{padding:.5rem 1rem;border-radius:999px;font-weight:700;font-size:.92rem;color:#1b2340;
+  box-shadow:5px 5px 10px var(--lo),-4px -4px 9px var(--hi),inset -3px -3px 6px var(--in-lo),inset 3px 3px 6px var(--in-hi)}
+.job+.job{margin-top:1.2rem;padding-top:1.2rem;border-top:2px solid var(--track)}
+.job .when{font-weight:700;color:var(--violet);font-size:.92rem}
+.job p{margin-top:.3rem}
+.copy{width:100%;margin-top:1rem;text-align:left;display:flex;justify-content:space-between;align-items:center;font-size:1.05rem}
+.copy span{font-size:.85rem;opacity:.75}
+footer{padding:1rem 0 3rem;text-align:center;color:var(--muted);font-size:.92rem}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><div class="bar clay">
+  <b>Chandrakant Ray</b>
+  <ul><li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li><li><a href="#skills">Skills</a></li><li><a class="btn c-coral" href="#contact" style="padding:.55rem 1.1rem;color:#1b2340">Contact</a></li></ul>
+</div></div></nav>
+
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <h1><span>Community Manager · Gaming &amp; Esports</span>I build friendly, well-run gaming communities.</h1>
+      <p>I moderate Discord servers, support players and help run tournaments, so members feel welcome and events run smoothly.</p>
+      <div class="row"><a class="btn c-coral" href="#experience">See my experience</a><a class="btn soft" href="#contact">Connect with me</a></div>
+    </div>
+    <div class="player clay">
+      <div class="who"><div class="avatar c-violet">CR</div><div><h3>Chandrakant Ray</h3><small>Moderator, Gangstar Mirage City India</small></div></div>
+      <div class="status dent"><i class="dot"></i>Open to Community Manager roles</div>
+      <div class="bars">
+        <div class="bar-row"><div><span>Clash of Clans</span><span>8+ years</span></div><div class="track"><div class="fill c-sun" style="--w:100%"></div></div></div>
+        <div class="bar-row"><div><span>Free Fire</span><span>6+ years</span></div><div class="track"><div class="fill c-coral" style="--w:75%"></div></div></div>
+        <div class="bar-row"><div><span>BGMI</span><span>1+ year</span></div><div class="track"><div class="fill c-teal" style="--w:14%"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="bento">
+    <section id="about" class="clay s7">
+      <h2>About me</h2>
+      <p>I work in gaming and esports communities: Discord moderation, player support, event coordination, tournament registrations and community announcements. I also test games and give feedback, and I'm comfortable with Discord bots and basic Python. I'd like to join ESFI as a Community Manager.</p>
+    </section>
+
+    <section id="contact" class="clay s5 c-violet">
+      <h2>Let's connect</h2>
+      <p style="color:#1b2340">Tap my Discord ID to copy it, or find me on social media.</p>
+      <button class="btn soft copy" id="copy" type="button"><b>@legacyxplayz</b><span id="hint">Copy</span></button>
+      <div class="row" style="margin-top:1rem">
+        <a class="btn soft" href="https://www.instagram.com/legacy.plays" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn soft" href="https://www.youtube.com/@LEGACYxPLAYS" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </section>
+
+    <section id="experience" class="clay s7">
+      <h2>Experience</h2>
+      <div class="job"><h3>Moderator, Gangstar Mirage City India</h3><div class="when">Present</div>
+        <p>I manage and moderate the Discord server and wider community, handle player support, support events and write announcements.</p></div>
+      <div class="job"><h3>Ex-BGMI Moderator, GodLike Esports</h3><div class="when">Past role</div>
+        <p>I managed tournament registrations, helped with in-game spectating and player communication, and supported the CCTC Tournament by GodLike x SweetsDen.</p></div>
+    </section>
+
+    <section id="skills" class="clay s5">
+      <h2>Community skills</h2>
+      <div class="pills">
+        <span class="pill c-coral">Community management</span><span class="pill c-sun">Discord moderation</span>
+        <span class="pill c-teal">Esports operations</span><span class="pill c-violet">Event coordination</span>
+        <span class="pill c-coral">Player support</span><span class="pill c-sun">Tournament registrations</span>
+        <span class="pill c-teal">Announcements</span>
+      </div>
+    </section>
+
+    <section class="clay s6">
+      <h2>Tech skills</h2>
+      <div class="pills">
+        <span class="pill c-violet">Discord bots</span><span class="pill c-teal">Python</span>
+        <span class="pill c-sun">Firebase</span><span class="pill c-coral">Git &amp; GitHub</span><span class="pill c-violet">Game testing</span>
+      </div>
+    </section>
+
+    <section class="clay s6">
+      <h2>Languages</h2>
+      <div class="pills">
+        <span class="pill c-sun">Hindi · Fluent</span><span class="pill c-teal">Bhojpuri · Fluent</span><span class="pill c-coral">English · Working proficiency</span>
+      </div>
+    </section>
+  </div>
+</main>
+<footer>© 2026 Chandrakant Ray</footer>
+<script>
+document.getElementById('copy').addEventListener('click',function(){
+  var h=document.getElementById('hint');
+  function ok(){h.textContent='Copied';setTimeout(function(){h.textContent='Copy'},1800)}
+  try{navigator.clipboard.writeText('legacyxplayz').then(ok,function(){h.textContent='Discord: legacyxplayz'})}
+  catch(e){h.textContent='Discord: legacyxplayz'}
+});
+</script>
+</body>
+</html>
